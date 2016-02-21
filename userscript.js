@@ -20,6 +20,12 @@ function injectCSS(css) {
 }
 
 injectCSS(`
+.header {
+  border-bottom: none;
+}
+.repohead.experiment-repo-nav {
+  background-color: #f5f5f5;
+}
 .account-switcher {
   display: none;
   margin-bottom: 0;
