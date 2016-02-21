@@ -20,6 +20,13 @@ function injectCSS(css) {
 }
 
 injectCSS(`
+body {
+  min-width: auto;
+}
+.container {
+  max-width: 980px;
+  width: auto;
+}
 .header {
   border-bottom: none;
 }
