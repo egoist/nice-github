@@ -56,13 +56,20 @@ injectCSS(`
   border-color: #ddd;
   box-shadow: none;
 }
+.btn {
+  background-image: none !important;
+}
+.github-jobs-promotion {
+  display: none;
+}
+input, textarea {
+  box-shadow: none !important;
+}
 `)
 
 document.addEventListener('DOMContentLoaded', function () {
     const path = location.pathname
     if (path === '/') {
-        // hide ads
-        $('.github-jobs-promotion').hide()
 
         // hide org repos
         $('.dashboard-sidebar').find('.boxed-group').first().hide()
